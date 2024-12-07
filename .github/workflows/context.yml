@@ -5,6 +5,8 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      BRANCH: main
     steps:
       - run: echo "${{ github.actor }}"
       - run: echo "${{ github.id }}"
@@ -19,3 +21,4 @@ jobs:
       - run: echo "${{ runner.temp }}"
       - run: echo "${{ runner.tool_cache }}"
       - run: echo "${{ runner.debug }}"
+      - run: echo "${{ env.BRANCH }}"
