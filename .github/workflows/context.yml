@@ -8,6 +8,7 @@ jobs:
     env:
       BRANCH: main
       ACTOR: ${{ github.actor }}
+      USERNAME1: ${{ vars.USERNAME }}
     steps:
       - run: echo "${{ github.actor }}"
       - run: echo "${{ github.id }}"
@@ -24,4 +25,5 @@ jobs:
       - run: echo "${{ runner.debug }}"
       - run: echo "${{ env.BRANCH }}"
       - run: echo "${ACTOR}"
+      - run: echo "${USERNAME1}"
 
