@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BRANCH: main
-      ACTOR: ${{ github_actor }}
+      ACTOR: ${{ github.actor }}
     steps:
       - run: echo "${{ github.actor }}"
       - run: echo "${{ github.id }}"
