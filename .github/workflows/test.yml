@@ -1,5 +1,5 @@
 ﻿name: Test
-  on: pull_request:
+  on: push:
     paths: ['go/**/*.go]
 jobs:
   test:
