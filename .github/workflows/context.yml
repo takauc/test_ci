@@ -9,7 +9,7 @@ jobs:
       BRANCH: main
       ACTOR: ${{ github.actor }}
       USERNAME1: ${{ vars.USERNAME }}
-      GITHUB_ACTION_PATH: ${{ github.action_path }}
+      ACTION_PATH: ${{ github.action_path }}
     steps:
       - run: echo "${{ github.actor }}"
       - run: echo "${{ github.id }}"
@@ -27,4 +27,4 @@ jobs:
       - run: echo "${{ env.BRANCH }}"
       - run: echo "${ACTOR}"
       - run: echo "${USERNAME1}"
-      - run: echo "${GITHUB_ACTION_PATH}"
+      - run: echo "${ACTION_PATH}"
