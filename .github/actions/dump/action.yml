@@ -2,5 +2,5 @@
 runs:
   using: composite
   steps:
-    - run: echo "${GITHUB_ACTION_PATH"
+    - run: echo "${GITHUB_ACTION_PATH}"
       shell: bash
