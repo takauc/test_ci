@@ -2,7 +2,7 @@
 on: push
 jobs:
   debug:
-    runs-on ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/dump/
