@@ -5,13 +5,13 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    uses: actions/checkout@v4
     env:
       BRANCH: main
       ACTOR: ${{ github.actor }}
       USERNAME1: ${{ vars.USERNAME }}
       ACTION_PATH: ${{ github.action_path }}
     steps:
+      - uses: actions/checkout@v4
       - run: echo "${{ github.actor }}"
       - run: echo "${{ github.id }}"
       - run: echo "${{ github.head_ref }}"
