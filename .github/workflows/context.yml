@@ -5,6 +5,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    uses: actions/checkout@v4
     env:
       BRANCH: main
       ACTOR: ${{ github.actor }}
