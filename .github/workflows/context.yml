@@ -28,4 +28,5 @@ jobs:
       - run: echo "${{ env.BRANCH }}"
       - run: echo "${ACTOR}"
       - run: echo "${USERNAME1}"
+      - run: echo "${GITHUB_ACTION_PATH}"
       - run: echo "${ACTION_PATH}"
